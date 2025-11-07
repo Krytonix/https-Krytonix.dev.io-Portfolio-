@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krytonix – Cybernetic Web Architect</title>
+    <meta name="description" content="Elite freelance web developer crafting bleeding-edge digital experiences. Quantum-grade code, neon aesthetics, pixel-perfect execution.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-text">INITIALIZING...</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <canvas id="constellation"></canvas>
+    <div class="grid-overlay"></div>
+    <div class="scanline"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar" data-lenis-prevent>
+        <div class="logo" data-magnetic>
+            <span class="logo-glitch">KRYTONIX</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" data-magnetic data-cursor-text="Home">//home</a></li>
+            <li><a href="#about" data-magnetic data-cursor-text="Profile">//profile</a></li>
+            <li><a href="#projects" data-magnetic data-cursor-text="Lab">//lab</a></li>
+            <li><a href="#skills" data-magnetic data-cursor-text="Tech">//tech</a></li>
+            <li><a href="#contact" data-magnetic data-cursor-text="Connect">//connect</a></li>
+        </ul>
+        <div class="nav-status">
+            <div class="status-dot"></div>
+            <span>Available for hire</span>
+        </div>
+        <button class="menu-toggle" aria-label="Menu" data-magnetic>
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <main>
+        <section id="home" class="hero" data-scroll-section>
+            <div class="hero-content">
+                <div class="hero-badge">CYBERNETIC WEB ARCHITECT</div>
+                <h1 class="hero-title">
+                    <span class="title-line" data-splitting>Krytonix</span>
+                </h1>
+                <p class="hero-subtitle" data-splitting>Freelance Developer crafting <span class="highlight">bleeding-edge</span> digital experiences with quantum-grade precision</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button primary" data-magnetic data-cursor-text="Engage">
+                        <span>Deploy Project</span>
+                        <div class="btn-glitch"></div>
+                    </a>
+                    <a href="#projects" class="cta-button secondary" data-magnetic data-cursor-text="Explore">
+                        <span>View Lab</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots"></div>
+                        <div class="terminal-dots"></div>
+                        <div class="terminal-dots"></div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line"><span class="prompt">$</span> krytonix --version</div>
+                        <div class="terminal-line">v2.0.0-alpha</div>
+                        <div class="terminal-line"><span class="prompt">$</span> krytonix --capabilities</div>
+                        <div class="terminal-line">> [React, WebGL, Node, UI/UX]</div>
+                        <div class="terminal-line cursor-line"><span class="prompt">$</span> <span class="cursor-blink"></span></div>
+                    </div>
+                </div>
+                <div class="floating-orbs">
+                    <div class="orb" data-speed="0.5"></div>
+                    <div class="orb" data-speed="-0.8"></div>
+                    <div class="orb" data-speed="1.2"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about" data-scroll-section>
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">//01</div>
+                    <h2 class="section-title" data-splitting>Profile</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-content" data-reveal>
+                        <p class="about-text">
+                            I'm a <span class="highlight">cybernetic developer</span> fusing human creativity with machine precision. My code runs at lightspeed, my designs exist in 4D space. I architect digital experiences that transcend reality.
+                        </p>
+                        <div class="tech-stack">
+                            <div class="stack-category">
+                                <h4>Frontend Core</h4>
+                                <div class="stack-items" data-tech-stack></div>
+                            </div>
+                            <div class="stack-category">
+                                <h4>Infrastructure</h4>
+                                <div class="stack-items" data-infrastructure></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats" data-reveal>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">Years in Matrix</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="42">0</div>
+                            <div class="stat-label">Projects Deployed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Lines of Code</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects" data-scroll-section>
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">//02</div>
+                    <h2 class="section-title" data-splitting>Digital Lab</h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card" data-reveal data-tilt>
+                        <div class="project-image">
+                            <div class="project-number">01</div>
+                            <div class="project-bg" style="background: linear-gradient(135deg, #ff0080, #7928ca);"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Quantum Commerce</h3>
+                            <p class="project-description">Next-gen e-commerce with WebGL product visualizer and AI recommendations</p>
+                            <div class="project-tags">
+                                <span>React</span><span>WebGL</span><span>TensorFlow</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-cursor-text="Demo">Live Demo</a>
+                                <a href="#" class="project-link" data-cursor-text="Code">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-reveal data-tilt>
+                        <div class="project-image">
+                            <div class="project-number">02</div>
+                            <div class="project-bg" style="background: linear-gradient(135deg, #007cf0, #00dfd8);"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Neural Network UI</h3>
+                            <p class="project-description">Real-time data visualization dashboard with 3D node graph engine</p>
+                            <div class="project-tags">
+                                <span>Three.js</span><span>D3.js</span><span>Socket.io</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-cursor-text="Demo">Live Demo</a>
+                                <a href="#" class="project-link" data-cursor-text="Code">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-reveal data-tilt>
+                        <div class="project-image">
+                            <div class="project-number">03</div>
+                            <div class="project-bg" style="background: linear-gradient(135deg, #ff4d4d, #f9cb28);"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Crypto Nexus</h3>
+                            <p class="project-description">DeFi platform with real-time blockchain analytics and trading</p>
+                            <div class="project-tags">
+                                <span>Vue.js</span><span>Web3.js</span><span>Ethers</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-cursor-text="Demo">Live Demo</a>
+                                <a href="#" class="project-link" data-cursor-text="Code">Source Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills" data-scroll-section>
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">//03</div>
+                    <h2 class="section-title" data-splitting>Tech Stack</h2>
+                </div>
+                <div class="skills-marquee">
+                    <div class="marquee-track">
+                        <div class="skill-item" data-magnetic><span>React</span></div>
+                        <div class="skill-item" data-magnetic><span>Next.js</span></div>
+                        <div class="skill-item" data-magnetic><span>TypeScript</span></div>
+                        <div class="skill-item" data-magnetic><span>Three.js</span></div>
+                        <div class="skill-item" data-magnetic><span>Framer</span></div>
+                        <div class="skill-item" data-magnetic><span>Node.js</span></div>
+                        <div class="skill-item" data-magnetic><span>Rust</span></div>
+                        <div class="skill-item" data-magnetic><span>WebGL</span></div>
+                    </div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category" data-reveal>
+                        <h4>Languages</h4>
+                        <p>JavaScript, TypeScript, Python, GLSL</p>
+                    </div>
+                    <div class="skill-category" data-reveal>
+                        <h4>Frameworks</h4>
+                        <p>React, Next.js, Vue, Svelte, Express</p>
+                    </div>
+                    <div class="skill-category" data-reveal>
+                        <h4>Infrastructure</h4>
+                        <p>Kubernetes, Docker, AWS, Vercel, Netlify</p>
+                    </div>
+                    <div class="skill-category" data-reveal>
+                        <h4>Tools</h4>
+                        <p>Git, Figma, Blender, FFmpeg, Webpack</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" data-scroll-section>
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label">//04</div>
+                    <h2 class="section-title" data-splitting>Establish Connection</h2>
+                </div>
+                <div class="contact-grid">
+                    <form class="contact-form" data-reveal onsubmit="handleSubmit(event)">
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Agent ID</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Transmission Line</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Mission Brief</label>
+                        </div>
+                        <button type="submit" class="cta-button primary" data-magnetic data-cursor-text="Transmit">
+                            <span>Send Transmission</span>
+                            <div class="btn-particles"></div>
+                        </button>
+                    </form>
+                    <div class="contact-info" data-reveal>
+                        <h3>Lets create something extraordinary</h3>
+                        <p>Available for select freelance opportunities and collaborative missions worldwide.</p>
+                        <div class="contact-links">
+                            <a href="mailto:krytonix@cyber.net" data-cursor-text="Email" data-magnetic>krytonix@cyber.net</a>
+                            <a href="https://discord.gg/krytonix" data-cursor-text="Discord" data-magnetic>Join Discord</a>
+                        </div>
+                        <div class="social-grid">
+                            <a href="#" class="social-item" data-cursor-text="GitHub">GH</a>
+                            <a href="#" class="social-item" data-cursor-text="LinkedIn">LI</a>
+                            <a href="#" class="social-item" data-cursor-text="Twitter">TW</a>
+                            <a href="#" class="social-item" data-cursor-text="Dribbble">DR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" data-scroll-section>
+        <div class="container">
+            <p>&copy; 2025 Krytonix | Digital Architect | All systems operational</p>
+            <div class="footer-metrics">
+                <span>Latency: 12ms</span>
+                <span>Uptime: 99.9%</span>
+                <span>Version: 2.0.0</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
